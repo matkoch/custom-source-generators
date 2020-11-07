@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGenerators", "src\CustomGenerators\CustomGenerators.csproj", "{42088BF9-0008-4036-8A58-BFBDD1BAFB04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "src\TestProject\TestProject.csproj", "{C54B6C2A-189F-46B8-865B-5EEA31425DEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42088BF9-0008-4036-8A58-BFBDD1BAFB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42088BF9-0008-4036-8A58-BFBDD1BAFB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42088BF9-0008-4036-8A58-BFBDD1BAFB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42088BF9-0008-4036-8A58-BFBDD1BAFB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54B6C2A-189F-46B8-865B-5EEA31425DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54B6C2A-189F-46B8-865B-5EEA31425DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54B6C2A-189F-46B8-865B-5EEA31425DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54B6C2A-189F-46B8-865B-5EEA31425DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

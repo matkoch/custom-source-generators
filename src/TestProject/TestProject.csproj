@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+<!--    <TargetFramework>netcoreapp3.1</TargetFramework>-->
+    <TargetFramework>net5.0</TargetFramework>
+
+    <MSBuildWarningsAsErrors>CS8785</MSBuildWarningsAsErrors>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)\GeneratedFiles</CompilerGeneratedFilesOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomGenerators\CustomGenerators.csproj" OutputItemType="Analyzer" />
+  </ItemGroup>
+
+</Project>
