@@ -16,5 +16,9 @@
 [Dd]ebug/
 [Rr]elease/
 
-.vs
 .idea
+.vscode
+.vs
+
+*.rsp
+*.binlog

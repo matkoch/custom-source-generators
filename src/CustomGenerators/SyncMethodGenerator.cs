@@ -24,8 +24,9 @@ namespace CustomGenerators
         }
 
         public void Execute(GeneratorExecutionContext context)
-            //public void Execute(SourceGeneratorContext context)
         {
+            // SpinWait.SpinUntil(() => Debugger.IsAttached);
+
             var sourceBuilder = new StringBuilder();
 
             var compilation = context.Compilation;
@@ -71,9 +72,16 @@ namespace CustomGenerators
                     .AppendLine("}");
             }
 
+            sourceBuilder.AppendLine(@"
+public static partial class Hello
+{
+    public static void World2()
+    {
+        System.Console.WriteLine(""Hello"");
+    }
+}
+");
 
-            sourceBuilder.AppendLine(
-                $"public static partial class Hello {{ public static void World2() {{ System.Console.WriteLine(\"Hello!\"); }} }}");
             var source = SourceText.From(sourceBuilder.ToString(), Encoding.UTF8);
             context.AddSource(nameof(SyncMethodGenerator), source);
             // File.WriteAllText("output.txt", sourceBuilder.ToString());
