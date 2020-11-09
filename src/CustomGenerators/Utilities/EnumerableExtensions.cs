@@ -53,5 +53,11 @@ namespace CustomGenerators.Utilities
             foreach (var childOrDescendant in child.DescendantsAndSelf(selector, traverse))
                 yield return childOrDescendant;
         }
+
+        public static void ForEach<T>(this IEnumerable<T> enumerable, Action<T> action)
+        {
+            foreach (var item in enumerable)
+                action(item);
+        }
     }
 }

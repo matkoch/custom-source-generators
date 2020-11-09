@@ -14,4 +14,8 @@
     <ProjectReference Include="..\CustomGenerators\CustomGenerators.csproj" OutputItemType="Analyzer" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FakeItEasy" Version="6.2.1" />
+  </ItemGroup>
+
 </Project>

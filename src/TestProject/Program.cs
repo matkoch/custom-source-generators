@@ -1,28 +1,48 @@
+using System;
 using System.Threading;
 using System.Threading.Tasks;
+using FakeItEasy;
 
-namespace TestProject
+namespace Project
 {
+    // https://github.com/matkoch/custom-source-generators
     public partial class Program
     {
         public static void Main()
         {
-            // Run();
-            Run1();
-            Run2("abc");
-        }
-
-        public static async Task<int> Run1Async()
-        {
-            return await Task.FromResult(1);
-        }
-        public static async Task Run2Async(string abc)
-        {
-            await Task.CompletedTask;
-        }
-        public static async Task Run3Async(CancellationToken token)
-        {
-            await Task.CompletedTask;
         }
     }
+
+    public class Calculator
+    {
+        public Calculator(ILogger logger, IMath math, IUniverse universe)
+        {
+        }
+    }
+}
+
+namespace Project.Tests
+{
+    public partial class CalculatorTest
+    {
+        public void Test01()
+        {
+            // A.CallTo(() => );
+            Console.WriteLine(logger);
+        }
+    }
+
+}
+
+
+public interface ILogger
+{
+}
+
+public interface IMath
+{
+}
+
+public interface IUniverse
+{
 }
